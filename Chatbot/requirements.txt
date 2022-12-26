@@ -1,0 +1,8 @@
+numpy
+tflearn
+pickle
+tensorflow
+nltk
+json
+os
+dotenv
