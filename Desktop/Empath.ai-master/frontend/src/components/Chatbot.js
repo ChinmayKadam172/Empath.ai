@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Chatbot() {
-	const [response, setResponse] = useEffect({});
+	const [response, setResponse] = useState();
 	const [id, setId] = useState();
 	useEffect(() => {
 		axios
-			.get("http://127.0.0.1:5000/api?input=hello")
+			.get("http://127.0.0.1:5000/api", id)
 			.then((res) => {
 				console.log(res);
 				setResponse(res);
@@ -14,7 +14,7 @@ export default function Chatbot() {
 			.catch((err) => {
 				console.log(err);
 			});
-	}, []);
+	}, [id]);
 
 	return (
 		<>

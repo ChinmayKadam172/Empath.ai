@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Face from "./components/Face";
 import HomeScreen from "./components/HomeScreen";
+import Chatbot from "./components/Chatbot"
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<HomeScreen />} />
 					<Route path="/face" element={<Face />} />
+					<Route path="/chat" element={<Chatbot />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
