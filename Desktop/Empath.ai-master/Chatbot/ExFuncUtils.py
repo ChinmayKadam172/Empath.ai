@@ -19,4 +19,4 @@ def joke():
 
     response = requests.request("GET", url, headers=headers)
     jsonv = response.json()
-    print(jsonv["body"][0]["setup"]+"... "+jsonv["body"][0]["punchline"])
+    return(jsonv["body"][0]["setup"]+"... "+jsonv["body"][0]["punchline"])

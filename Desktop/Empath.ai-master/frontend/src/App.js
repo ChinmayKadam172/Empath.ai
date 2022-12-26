@@ -6,16 +6,16 @@ import Face from "./components/Face";
 import HomeScreen from "./components/HomeScreen";
 
 function App() {
-  return (
-    <div className="screen">
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/face" element={<Face/>} />
-      </Routes>
-      </BrowserRouter>
-    </div>
-  );
+	return (
+		<div className="screen">
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<HomeScreen />} />
+					<Route path="/face" element={<Face />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
